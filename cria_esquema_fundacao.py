@@ -4,7 +4,6 @@ username = 'SYS'
 password = 'Not@1943ma'
 dsn      = 'localhost:1521/XE'
 
-# modo thin (sem Instant Client) ou thick (com init_oracle_client acima)
 conn = oracledb.connect(
     user   = username,
     password = password,
