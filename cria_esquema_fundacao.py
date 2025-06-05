@@ -2,7 +2,7 @@ import oracledb
 
 username = 'SYS'
 password = 'Not@1943ma'
-dsn      = 'localhost:1521/XE'
+dsn      = 'localhost:1521/XE' # no servidor de produção, trocar pelo seu TNS ou DSN ou IP do banco
 
 conn = oracledb.connect(
     user   = username,
