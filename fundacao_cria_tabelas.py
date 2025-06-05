@@ -2,9 +2,10 @@ import oracledb
 
 # 1) Conexão com usuário fundacao
 conn = oracledb.connect(
-    user="fundacao",
-    password="Not@1943ma",
-    dsn="localhost/XEPDB1"
+    user = "SYS",
+    password = "Not@1943ma",
+    dsn = "localhost:1521/XE",     # DSN do CDB (container raiz)
+    mode=oracledb.SYSDBA
 )
 cur = conn.cursor()
 
